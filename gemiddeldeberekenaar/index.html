@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gemiddelde Berekenaar</title>
+    </head>
+    <body>
+        <div style="text-align: center;" id="mainContent">
+        <h1>Gemiddelde berekenaar</h1>
+        <span>Bereken het gemiddelde van 2-20 cijfers!</span> <br>
+        <input type="range" min="2" max="20" id="slider" value="10">
+        <span id="testCounter"></span> <br>
+        <details><summary>De berekeningen</summary>
+            <div id="berekeningen">
+            <input placeholder="Cijfer 1">
+            <input placeholder="Cijfer 2">
+            <input placeholder="Cijfer 3">
+            <input placeholder="Cijfer 4">
+            <input placeholder="Cijfer 5">
+            <input placeholder="Cijfer 6">
+            <input placeholder="Cijfer 7">
+            <input placeholder="Cijfer 8">
+            <input placeholder="Cijfer 9">
+            <input placeholder="Cijfer 10">
+            <input placeholder="Cijfer 11">
+            <input placeholder="Cijfer 12">
+            <input placeholder="Cijfer 13">
+            <input placeholder="Cijfer 14">
+            <input placeholder="Cijfer 15">
+            <input placeholder="Cijfer 16">
+            <input placeholder="Cijfer 17">
+            <input placeholder="Cijfer 18">
+            <input placeholder="Cijfer 19">
+            <input placeholder="Cijfer 20">
+            </div>
+        </details>
+        <button onclick="bereken()">Bereken</button> <br>
+        <span id="antwoord"></span>
+        <script src="script.js"></script>
+        </div>
+        <details style="position: fixed; bottom: 0; left: 0;"><summary>Help! Ik krijg steeds NaN!</summary>Als je steeds NaN (kort voor 'Not-a-Number', wat vertaald naar Nederlands 'Niet-een-Cijfer' is) krijgt, dan betekent het dat je iets niet of iets fouts ingevuld had. Sorry dat ik dit niet kon fixen, ik kon gewoon helemaal niet uitvinden hoe ik het moest oplossen.</details>
+    </body>
+
+</html>
