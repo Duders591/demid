@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <title>Gemiddelde Berekenaar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div style="text-align: center;" id="mainContent">
+        <div class="text-center" id="mainContent">
         <h1>Gemiddelde berekenaar</h1>
         <span>Bereken het gemiddelde van 2-20 cijfers!</span> <br>
         <input type="range" min="2" max="20" id="slider" value="10">
@@ -36,8 +39,8 @@
         <button onclick="bereken()">Bereken</button> <br>
         <span id="antwoord"></span>
         <script src="script.js"></script>
-        </div>
         <details style="position: fixed; bottom: 0; left: 0;"><summary>Help! Ik krijg steeds NaN!</summary>Als je steeds NaN (kort voor 'Not-a-Number', wat vertaald naar Nederlands 'Niet-een-Cijfer' is) krijgt, dan betekent het dat je iets niet of iets fouts ingevuld had. Sorry dat ik dit niet kon fixen, ik kon gewoon helemaal niet uitvinden hoe ik het moest oplossen.</details>
+       </div>
     </body>
 
 </html>
