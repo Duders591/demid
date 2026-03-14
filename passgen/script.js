@@ -57,4 +57,5 @@ function toggleVisibility() {
 }
 function copyPass() {
         navigator.clipboard.writeText(passText.value);
+        alert("Wachtwoord gekopieerd")
 }
