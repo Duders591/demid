@@ -11,11 +11,11 @@
         <h1>Timer</h1>
         <p>Kies uit hoe lang u wilt tot de timer afloopt.</p>
         <div id="inputs">
-            <input type="number" placeholder="Seconden" oninput="checkIfValid(this)">
-            <input type="number" placeholder="Minuten" oninput="checkIfValid(this)">
-            <input type="number" placeholder="Uren" oninput="checkIfValid(this)">
+            <input type="number" placeholder="Seconden" oninput="checkIfValid(this)" min=0 max=60>
+            <input type="number" placeholder="Minuten" oninput="checkIfValid(this)" min=0 max=60>
+            <input type="number" placeholder="Uren" oninput="checkIfValid(this)" min=0>
         </div>
-        <a href="#" id="redirect"><button onclick="setTimer()">Start de timer</button></a>
+        <a href="#" id="redirect"><button onclick="setTimer()" class="btn btn-outline-primary">Start de timer</button></a>
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         </div>
