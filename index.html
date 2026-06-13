@@ -1,22 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+<!doctype html>
+<html lang="nl" data-bs-theme="dark" id="htmlDocument">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demid.org - Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-    <div class="text-center">
-        <h1>Demid's sites</h1>
-        <span>Dit is een website waar ik een paar kleinere sites die ik zelf gemaakt heb op zet.</span>
-        <br> <br>
-        <a href="https://demid.org/timer/index.html"><button class="btn btn-outline-info">⏰ Timer</button></a> <br> <br>
-        <a href="https://demid.org/gemiddeldeberekenaar/index.html"><button class="btn btn-outline-danger">➕➗ Gemiddelde Berekenaar</button></a> <br> <br>
-        <a href="https://demid.org/steenpapierschaar/index.html"><button class="btn btn-outline-warning">🪨📄✂ Steen Papier Schaar</button></a> <br> <br>
-        <a href="https://demid.org/passgen/index.html"><button class="btn btn-outline-dark">🔒🔑Wachtwoord Generator</button></a> <br> <br>
-        <a href="http://demid.org/bookmarklets/index.html"><button class="btn btn-outline-danger">📕👩‍💻Bookmarklets</button></a> <br> <br>
-    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <body class="text-center">
+    <h1>Demid's sites</h1>
+    <button id="themeToggle" style="left:0; top:0;" class="btn position-fixed"><i class="bi bi-moon-stars-fill" id="themeToggleIcon"></i></button>
+    <div id="sites" class="container text-center">
+      <div class="row mb-2">
+        <div class="col w-25">
+          <a href="https://demid.org/timer" class="text-decoration-none">
+          <div class="card align-self-start bg-opacity-50 bg-info">
+            <h1>Timer</h1>
+            <img src="./imgs/timer.png" alt="timer preview" width="80%" height="40%" class="card align-self-center mb-2"> <br>
+            <span class="mb-2">Een site waar je een timer kunt zetten! (heel erg buggy)</span>
+          </div>
+          </a>
+        </div>
+        <div class="col w-25">
+          <a href="https://demid.org/gemiddeldeberekenaar" class="text-decoration-none">
+          <div class="card align-self-start bg-opacity-50 bg-danger">
+            <h1>Gemiddelde Berekenaar</h1>
+            <img src="./imgs/gembr.png" alt="gemiddelde berekenaar preview" width="80%" height="40%" class="card align-self-center mb-2"> <br>
+            <span class="mb-2">Een site waar je het gemiddelde van 2-20 cijfers kan berekenen!</span>
+          </div>
+          </a>
+        </div>
+        <div class="col w-25">
+          <a href="https://demid.org/steenpapierschaar" class="text-decoration-none">
+          <div class="card align-self-start bg-opacity-50 bg-warning">
+            <h1>Steen Papier Schaar</h1>
+            <img src="./imgs/spsch.png" alt="steen papier schaar preview" width="80%" height="40%" class="card align-self-center mb-2"> <br>
+            <span class="mb-2">Een site waar je steen papier schaar kunt spelen!</span>
+          </div>
+          </a>
+        </div>
+        <div class="col w-25">
+          <a href="https://demid.org/passgen" class="text-decoration-none">
+          <div class="card align-self-start bg-opacity-50 bg-light">
+            <h1>Wachtwoord Generator</h1>
+            <img src="./imgs/passgen.png" alt="wachtwoord generator preview" width="80%" height="40%" class="card align-self-center mb-2"> <br>
+            <span class="mb-2">Een site waar je makkelijk en snel sterke wachtwoorden kunt genereren!</span>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col w-25">
+          <a href="http://demid.org/bookmarklets" class="text-decoration-none">
+          <div class="card align-self-start bg-opacity-50 bg-primary">
+            <h1>Bookmarklets</h1>
+            <span class="mb-2">Een site waar je meerdere bookmarklets kunt kopieren!</span>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div> <br>
+    <span class="text-muted">Er komen later <strong>nog</strong> wat meer sites bij!</span>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
