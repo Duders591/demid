@@ -1,15 +1,25 @@
+// TODO: 
+// maak het zodat de tooltip van showButton verandert 'on' → ''
+
+// bootstrap dingen
+let tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+let tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+// mijn code
 const passText = document.getElementById("passwordinput");
 const letterToggle = document.getElementById("letters");
 const numberToggle = document.getElementById("numbers");
 const charToggle = document.getElementById("characters");
 const showButton = document.getElementById("showbutton");
-let passLength = document.getElementById("passLength").value;
-let i = 0;
-let e = 0;
-let passVis = false;
+const copyButton = document.getElementById("copybutton");
+const showBtnTooltip = bootstrap.Tooltip.getOrCreateInstance(showButton);
+const copyBtnTooltip = bootstrap.Tooltip.getOrCreateInstance(copyButton);
 const passStuff = document.getElementsByClassName("pass-stuff");
+let passLength = document.getElementById("passLength").value;
+let passVis = false;
 let characters = []
 let password = ""
+let i = 0;
+let e = 0;
 function updateLength() {
 passLength = document.getElementById("passLength").value;
 }
@@ -47,15 +57,19 @@ function generate(lt, nt, ct) {
 function toggleVisibility() {
     if (!passVis) {
         passText.type = "";
-        passVis = true;
         showButton.innerHTML = `<i class="bi bi-eye-slash"></i>`;
+        showBtnTooltip.setContent({ ".tooltip-inner": "Wachtwoord onzichtbaar maken"});
     } else {
-        passText.type = "password"
-        passVis = false;
+        passText.type = "password";
         showButton.innerHTML = `<i class="bi bi-eye"></i>`;
+        showBtnTooltip.setContent({ ".tooltip-inner": "Wachtwoord zichtbaar maken"});
     };
+    passVis = !passVis;
 }
 function copyPass() {
         navigator.clipboard.writeText(passText.value);
-        alert("Wachtwoord gekopieerd")
+        copyBtnTooltip.setContent({ ".tooltip-inner": "Gekopieerd!"});
+        setTimeout(() => {
+            copyBtnTooltip.setContent({ ".tooltip-inner": "Wachtwoord kopieren"});
+        }, 1000);
 }
