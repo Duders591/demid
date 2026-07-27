@@ -27,9 +27,9 @@
         </div> <br>
         <p class="visually-hidden pass-stuff">Uw wachtwoord is:</p>
         <input readonly type="password" id="passwordinput" class="visually-hidden pass-stuff">
-        <button class="visually-hidden pass-stuff btn btn-outline-dark" id="showbutton" onclick="toggleVisibility()"><i class="bi bi-eye"></i></button>
-        <button class="visually-hidden pass-stuff btn btn-outline-warning" onclick="copyPass()"><i class="bi bi-clipboard"></i></button>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <button class="visually-hidden pass-stuff btn btn-outline-dark" id="showbutton" onclick="toggleVisibility()" data-bs-toggle="tooltip" title="Wachtwoord zichtbaar maken"><i class="bi bi-eye"></i></button>
+        <button class="visually-hidden pass-stuff btn btn-outline-warning" onclick="copyPass()" data-bs-toggle="tooltip" title="Wachtwoord kopieren" id="copybutton"><i class="bi bi-clipboard"></i></button>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
   </body>
 </html>
